@@ -1,0 +1,100 @@
+#profile .hide{
+    display: none;
+}
+
+#profile .hide:first-child{
+    display: inline-block;
+}
+
+//////////
+////////// Position for Aside & Profile
+
+#profile{
+    font-size: 0;
+}
+#profile section{
+    vertical-align: top;
+    font-size: 18px;
+    margin-top: 22px;
+    margin-left: 2%;
+    width: 42%;
+}
+
+#asideProfile{
+ display: inline-block;
+ margin-left: 15%;
+ font-size: 18px;
+ margin-top: 40px;
+}
+
+#asideProfile table{
+    width: 220px;
+}
+#asideProfile table:nth-child(1n+2){
+margin-top: 16px;
+}
+
+#asideProfile th, #asideProfile td{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#asideProfile th{
+    background-color: #EDEDED;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#asideProfile td:hover{
+    background-color: #ed0000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+//////// 
+/////// Line under H1
+#profile h1 { 
+    overflow:hidden;
+    position:relative;
+  }
+  #profile h1 span {
+    display:inline-block;
+    overflow:hidden;
+  }
+  #profile h1 span:before{
+    content:'';
+    height:1em;
+    display:inline-block;
+    width:100%;
+    position:absolute;
+  }
+  #profile h1 span:before {
+    margin-right:-100%;
+    border-bottom:solid 1px;
+    color:black;
+    vertical-align:bottom;
+  }
+
+/////////////////
+///////////////// Postion for inputs in Profile
+
+#profile section form{
+    background-color: #EDEDED;
+    height: 438px;
+}
+#profile section div:nth-child(1){
+    padding-top: 15px;
+}
+#profile section div{
+    text-align: center;
+    margin-top: 26px;
+}
+
+#profile section .button{
+    vertical-align: bottom;
+    text-align: right;
+}
+
+
+

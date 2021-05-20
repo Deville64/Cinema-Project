@@ -1,0 +1,169 @@
+#home h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin-top: 18px;
+}
+
+#home h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+//***Banner***
+#home #banner {
+    width: 960px;
+    height: 350px;
+    overflow: hidden;
+    margin: 30px auto;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 1);
+
+    @media(max-width: 1388px) {
+        display: none;
+    }
+}
+
+#home #home-banner{
+    display: block;
+    width: 960px;
+    float: left;
+    transition: all 0.75s;
+}
+
+#home #previous-btn,
+#home #next-btn {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    padding: 0 10px;
+    width: auto;
+    height: 350px;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#home #previous-btn:hover,
+#home #next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#home #next-btn {
+    margin-left: 920px;
+}
+
+//***Event***
+#home #event {
+    vertical-align: top;
+    font-size: 0;
+}
+
+#home article {
+    display: inline-block;
+    border: black solid 1px;
+    width: 32.65%;
+    margin-left: 1%;
+    margin-top: 18px;
+
+    &:nth-child(3n + 1) {
+        margin-left: 0;
+    }
+
+    @media(max-width: 1526px){
+        width: 49.5%;
+
+        &:nth-child(3n + 1) {
+            margin-left: 1%;
+        }
+
+        &:nth-child(2n + 1) {
+            margin-left: 0;
+        }
+    }
+
+    @media(max-width: 1050px){
+        width: 100%;
+    }
+}
+
+#home #date {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 9px;
+}
+
+#home #place {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-left: 10%;
+    font-size: 16px;
+    
+
+    &:img {
+        display: inline-block;
+        vertical-align: top;
+        width: 15%;
+    }
+
+    &:p {
+        display: inline-block;
+        vertical-align: top;
+        width: 15%;
+        font-size: 16px;
+        margin-top: 9px;
+    }
+}
+
+#home #logoWhere{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+#home #address{
+    display: inline-block;
+    width: 72%;
+    margin-top: 9px;
+}
+#home #poster{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-left: 2%;
+}
+#home #description {
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    font-size: 16px;
+    margin-left: 3%;
+}
+#home #participant {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+#home #button {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 45%;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:#19c589;
+    padding: 4px 8px;
+    border-radius: 18px;
+}

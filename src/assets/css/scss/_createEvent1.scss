@@ -1,0 +1,24 @@
+#CreateEvent1 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#CreateEvent1 #dropDownEvent .resultMovieSearch img {
+    max-width: 20%;
+}
+
+#CreateEvent1 #dropDownEvent .resultMovieSearch {
+    cursor: pointer;
+}
+
+#CreateEvent1 #dropDownEvent .resultMovieSearch:hover {
+    background-color: #f1f1f1;
+}
+
+#CreateEvent1 .show {
+    display: block;
+}

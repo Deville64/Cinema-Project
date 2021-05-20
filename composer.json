@@ -1,0 +1,14 @@
+{
+    "name": "",
+    "description": "projet cineLol",
+    "authors": [
+        {
+            "name": "Loïc",
+            "email": "deville64@live.fr"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^5.0",
+        "altorouter/altorouter": "^2.0"
+    }
+}

@@ -1,0 +1,1087 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #ed0000;
+  font-size: 0;
+  height: 68px;
+}
+@media (max-width: 1050px) {
+  header {
+    height: 164px;
+  }
+}
+
+header #menu,
+header #logo,
+header #menu form {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header #logo {
+  width: 105px;
+}
+@media (max-width: 1050px) {
+  header #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header #menu {
+  width: 70%;
+  float: right;
+  font-size: 0;
+}
+@media (max-width: 1050px) {
+  header #menu {
+    width: 100%;
+  }
+}
+
+header #menu form {
+  position: relative;
+  width: 40%;
+  margin-top: 18px;
+}
+@media (max-width: 1526px) {
+  header #menu form {
+    display: inline-block;
+    width: 61%;
+  }
+}
+@media (max-width: 1050px) {
+  header #menu form {
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+header #menu form label {
+  display: none;
+}
+
+header #menu input[type=text] {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 2.5%;
+  border-radius: 18px 18px 18px 18px;
+  height: 34px;
+}
+
+header #menu select {
+  margin-bottom: 15px;
+  width: 25%;
+  padding: 2.5%;
+  border-radius: 0 18px 18px 0;
+}
+
+header nav input[type=submit] {
+  display: block;
+  position: absolute;
+  background: url("../image/zoom.png");
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-indent: -9999px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  top: 9px;
+  right: 4%;
+}
+
+header li a:hover,
+header li a:focus {
+  color: #fff;
+}
+
+#sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 18px;
+}
+
+header #dropDown .resultMovieSearch img {
+  max-width: 20%;
+}
+
+header #dropDown .resultMovieSearch {
+  cursor: pointer;
+}
+
+header #dropDown .resultMovieSearch:hover {
+  background-color: #f1f1f1;
+}
+
+header .show {
+  display: block;
+}
+
+/*Strip the ul of padding and list styling*/
+header ul {
+  float: right;
+}
+@media (max-width: 1526px) {
+  header ul {
+    display: none;
+    background-color: #ed0000;
+  }
+}
+
+/*Create a horizontal list with spacing*/
+header li {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 18px;
+}
+@media (max-width: 1526px) {
+  header li {
+    width: 100%;
+  }
+}
+header li:first-child {
+  background-color: #ffba3f;
+  padding: 10px 20px;
+  border-radius: 18px;
+}
+header li:nth-child(2) {
+  margin-left: 40px;
+}
+@media (max-width: 1526px) {
+  header li:nth-child(2) {
+    margin-left: 0;
+  }
+}
+header li:nth-child(3) {
+  margin-left: 40px;
+}
+@media (max-width: 1526px) {
+  header li:nth-child(3) {
+    margin-left: 0;
+    margin-bottom: 18px;
+  }
+}
+
+/*Style 'show menu' label button and hide it by default*/
+header .show-menu {
+  background: #19c589;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 18px;
+  display: none;
+  font-size: 18px;
+}
+@media (max-width: 1526px) {
+  header .show-menu {
+    display: inline-block;
+    float: right;
+    margin-top: 18px;
+  }
+}
+@media (max-width: 1050px) {
+  header .show-menu {
+    float: none;
+    display: block;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*Hide checkbox*/
+header input[type=checkbox] {
+  display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+header input[type=checkbox]:checked ~ #jsp {
+  display: block;
+  left: 60%;
+  text-align: center;
+}
+
+#home h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  margin-top: 18px;
+}
+
+#home h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#home #banner {
+  width: 960px;
+  height: 350px;
+  overflow: hidden;
+  margin: 30px auto;
+  box-shadow: 0 8px 6px -6px black;
+}
+@media (max-width: 1388px) {
+  #home #banner {
+    display: none;
+  }
+}
+
+#home #home-banner {
+  display: block;
+  width: 960px;
+  float: left;
+  transition: all 0.75s;
+}
+
+#home #previous-btn,
+#home #next-btn {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  padding: 0 10px;
+  width: auto;
+  height: 350px;
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#home #previous-btn:hover,
+#home #next-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#home #next-btn {
+  margin-left: 920px;
+}
+
+#home #event {
+  vertical-align: top;
+  font-size: 0;
+}
+
+#home article {
+  display: inline-block;
+  border: black solid 1px;
+  width: 32.65%;
+  margin-left: 1%;
+  margin-top: 18px;
+}
+#home article:nth-child(3n+1) {
+  margin-left: 0;
+}
+@media (max-width: 1526px) {
+  #home article {
+    width: 49.5%;
+  }
+  #home article:nth-child(3n+1) {
+    margin-left: 1%;
+  }
+  #home article:nth-child(2n+1) {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1050px) {
+  #home article {
+    width: 100%;
+  }
+}
+
+#home #date {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  font-size: 16px;
+  margin-left: 2%;
+  margin-top: 9px;
+}
+
+#home #place {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-left: 10%;
+  font-size: 16px;
+}
+#home #place:img {
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+}
+#home #place:p {
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  font-size: 16px;
+  margin-top: 9px;
+}
+
+#home #logoWhere {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+#home #address {
+  display: inline-block;
+  width: 72%;
+  margin-top: 9px;
+}
+
+#home #poster {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  margin-left: 2%;
+}
+
+#home #description {
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+  font-size: 16px;
+  margin-left: 3%;
+}
+
+#home #participant {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  margin-left: 2%;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+#home #button {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 45%;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #19c589;
+  padding: 4px 8px;
+  border-radius: 18px;
+}
+
+#profile .hide {
+  display: none;
+}
+
+#profile .hide:first-child {
+  display: inline-block;
+}
+
+#profile {
+  font-size: 0;
+}
+
+#profile section {
+  vertical-align: top;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-left: 2%;
+  width: 42%;
+}
+
+#asideProfile {
+  display: inline-block;
+  margin-left: 15%;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+#asideProfile table {
+  width: 220px;
+}
+
+#asideProfile table:nth-child(1n+2) {
+  margin-top: 16px;
+}
+
+#asideProfile th, #asideProfile td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+#asideProfile th {
+  background-color: #EDEDED;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#asideProfile td:hover {
+  background-color: #ed0000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#profile h1 {
+  overflow: hidden;
+  position: relative;
+}
+
+#profile h1 span {
+  display: inline-block;
+  overflow: hidden;
+}
+
+#profile h1 span:before {
+  content: "";
+  height: 1em;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+}
+
+#profile h1 span:before {
+  margin-right: -100%;
+  border-bottom: solid 1px;
+  color: black;
+  vertical-align: bottom;
+}
+
+#profile section form {
+  background-color: #EDEDED;
+  height: 438px;
+}
+
+#profile section div:nth-child(1) {
+  padding-top: 15px;
+}
+
+#profile section div {
+  text-align: center;
+  margin-top: 26px;
+}
+
+#profile section .button {
+  vertical-align: bottom;
+  text-align: right;
+}
+
+#movie h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#movie h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#movie p {
+  font-size: 16px;
+}
+
+/*****************/
+/******MAIN*******/
+/*****************/
+#movie .movieP {
+  margin-left: 18%;
+}
+
+#movie main #poster {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+#movie main #poster {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+#movie main #video {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  background: url("") no-repeat top center;
+}
+
+/*****************/
+/******INFO*******/
+/*****************/
+#movie #more {
+  display: none;
+}
+
+#movie #info-movie ul li {
+  display: inline-block;
+  border: black solid 1px;
+  margin-right: 1%;
+  vertical-align: top;
+}
+
+#movie #info-movie ul li img {
+  width: 140px;
+  height: 210px;
+}
+
+#movie #info-movie ul li p {
+  margin-top: 5px;
+  margin-bottom: 4px;
+  width: 140px;
+  padding-left: 4%;
+}
+
+#movie #info-movie ul li #actor {
+  padding-left: 4%;
+}
+
+/*****************/
+/***RECOMMEND*****/
+/*****************/
+#movie #recommend ul li {
+  display: inline-block;
+  margin-right: 1%;
+  vertical-align: top;
+}
+
+#movie #recommend ul li img {
+  width: 140px;
+  height: 210px;
+}
+
+#menuMovie {
+  position: sticky;
+  top: 68px;
+}
+
+#menuMovie #descrMovie {
+  height: 50px;
+  background-color: grey;
+  font-size: 0;
+}
+
+#menuMovie #descrMovie #description, #menuMovie #descrMovie #title, #menuMovie #descrMovie #rate {
+  display: inline-block;
+  font-size: 16px;
+}
+
+#menuMovie #descrMovie #description {
+  width: 29%;
+}
+
+#menuMovie #descrMovie #title {
+  width: 54%;
+  margin-left: 1%;
+}
+
+#menuMovie #descrMovie #rate {
+  width: 16%;
+}
+
+#menuMovie #menu {
+  height: 50px;
+  background-color: black;
+  font-size: 0;
+}
+
+#menuMovie #menu ul li {
+  display: inline-block;
+  width: 5%;
+  padding: 19px 80px 12px 46px;
+  border: white solid 1px;
+}
+
+#menuMovie #menu ul li:first-child {
+  display: inline-block;
+  margin-left: 0;
+  text-indent: -9999px;
+  background: url("../image/sprite-home.png") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+#menuMovie #menu ul li a {
+  color: white;
+  font-size: 16px;
+}
+
+#menuMovie #menu ul li:first-child:hover,
+#menuMovie #menu ul li:first-child:focus {
+  background-position: 0 -80px;
+}
+
+#menuMovie #menu ul li a:hover,
+#menuMovie #menu ul li a:focus {
+  color: #fff;
+}
+
+#createEvent .wrapper {
+  display: flow-root;
+}
+
+#createEvent h1 {
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 16px;
+}
+
+#createEvent form {
+  float: left;
+  vertical-align: top;
+  width: 40%;
+}
+
+#createEvent ul {
+  margin-top: 16px;
+}
+
+#createEvent li {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#createEvent #searchControl {
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
+
+#createEvent li:nth-child(2) {
+  background-color: #EDEDED;
+  border-top: none;
+  text-align: center;
+}
+
+#createEvent #date,
+#createEvent #hour,
+#createEvent #minute {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#createEvent #date label,
+#createEvent #hour label,
+#createEvent #minute label {
+  display: none;
+}
+
+#createEvent #button {
+  float: right;
+  margin-top: 20px;
+}
+
+#createEvent .leaflet-control {
+  float: none;
+}
+
+#createEvent #mapid {
+  float: right;
+  vertical-align: top;
+  margin-top: 16px;
+  height: 520px;
+  width: 520px;
+  z-index: 0;
+}
+
+.toggleWrapper input {
+  position: absolute;
+  left: -99em;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 50px;
+  background: #d21626;
+  border-radius: 5px;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.toggle:before,
+.toggle:after {
+  position: absolute;
+  line-height: 50px;
+  font-size: 14px;
+  z-index: 2;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.toggle:before {
+  content: "OFF";
+  left: 20px;
+  color: #d21626;
+}
+
+.toggle:after {
+  content: "ON";
+  right: 20px;
+  color: #fff;
+}
+
+.toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  width: 65px;
+  height: 44px;
+  border-radius: 3px;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+input:checked + .toggle {
+  background: #66b317;
+}
+
+input:checked + .toggle:before {
+  color: #fff;
+}
+
+input:checked + .toggle:after {
+  color: #66b317;
+}
+
+input:checked + .toggle .toggle__handler {
+  width: 54px;
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+  border-color: #fff;
+}
+
+#CreateEvent1 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#CreateEvent1 #dropDownEvent .resultMovieSearch img {
+  max-width: 20%;
+}
+
+#CreateEvent1 #dropDownEvent .resultMovieSearch {
+  cursor: pointer;
+}
+
+#CreateEvent1 #dropDownEvent .resultMovieSearch:hover {
+  background-color: #f1f1f1;
+}
+
+#CreateEvent1 .show {
+  display: block;
+}
+
+.geocoder-control-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-image: url("img/search.png");
+  background-size: 26px;
+  border: none;
+  padding: 0;
+  text-indent: 6px;
+  font-size: 13px;
+  line-height: normal;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-position: right center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.geocoder-control-input-disabled {
+  background-color: #f4f4f4;
+  background-image: url("img/search-disabled.png");
+}
+
+.geocoder-control {
+  width: 26px;
+  height: 26px;
+  -webkit-transition: width 0.175s ease-in;
+  -moz-transition: width 0.175s ease-in;
+  -ms-transition: width 0.175s ease-in;
+  -o-transition: width 0.175s ease-in;
+  transition: width 0.175s ease-in;
+}
+
+.geocoder-control-expanded,
+.leaflet-touch .geocoder-control-expanded {
+  width: 275px;
+}
+
+.geocoder-control-input.geocoder-control-loading {
+  background-image: url("img/loading.gif");
+  background-size: 26px;
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .geocoder-control-input {
+    background-image: url("img/search@2x.png");
+  }
+
+  .geocoder-control-input-disabled {
+    background-image: url("img/search@2x-disabled.png");
+  }
+
+  .geocoder-control-input.geocoder-control-loading {
+    background-image: url("img/loading@2x.gif");
+  }
+}
+.geocoder-control-input:focus {
+  outline: none;
+  cursor: text;
+}
+
+.geocoder-control-input::-ms-clear {
+  display: none;
+}
+
+.geocoder-control-suggestions {
+  width: 100%;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  margin-top: 10px;
+  overflow: auto;
+  display: none;
+}
+
+.geocoder-control-list + .geocoder-control-header {
+  border-top: 1px solid #d5d5d5;
+}
+
+.geocoder-control-header {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #444;
+  background: #f2f2f2;
+  border-bottom: 1px solid #d5d5d5;
+  display: block;
+  padding: 0.5em;
+}
+
+.geocoder-control-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.geocoder-control-suggestions .geocoder-control-suggestion {
+  font-size: 13px;
+  padding: 7px;
+  background: white;
+  border-top: 1px solid #f1f1f1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.geocoder-control-suggestions .geocoder-control-suggestion:first-child {
+  border: none;
+}
+
+.geocoder-control-suggestions .geocoder-control-suggestion.geocoder-control-selected,
+.geocoder-control-suggestions .geocoder-control-suggestion:hover {
+  background: #7fdfff;
+  border-color: #7fdfff;
+}
+
+.leaflet-right .geocoder-control-suggestions {
+  left: auto;
+  right: 0;
+}
+
+.leaflet-right .geocoder-control-input {
+  left: auto;
+  right: 0;
+}
+
+.leaflet-bottom .geocoder-control-suggestions {
+  margin-top: 0;
+  top: 0;
+}
+
+.leaflet-touch .geocoder-control {
+  width: 34px;
+}
+
+.leaflet-touch .geocoder-control.geocoder-control-expanded {
+  width: 275px;
+}
+
+.leaflet-touch .geocoder-control-input {
+  height: 34px;
+  line-height: 30px;
+  background-size: 30px;
+}
+
+.leaflet-touch .geocoder-control-suggestions {
+  top: 30px;
+  width: 271px;
+}
+
+.leaflet-oldie .geocoder-control-input {
+  width: 28px;
+  height: 28px;
+}
+
+.leaflet-oldie .geocoder-control-expanded .geocoder-control-input {
+  width: auto;
+}
+
+.leaflet-oldie .geocoder-control-input,
+.leaflet-oldie .geocoder-control-suggestions {
+  border: 1px solid #999;
+}
+
+/*****************/
+/*****FOOTER******/
+/*****************/
+#footer {
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 0;
+}
+
+#footer .wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer nav {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#footer ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 15%;
+  margin-left: 10%;
+}
+
+#footer #right {
+  font-size: 16px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+}
+
+#footer ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

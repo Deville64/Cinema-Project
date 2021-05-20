@@ -1,0 +1,95 @@
+#movie h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#movie h2{
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#movie p{
+    font-size: 16px;
+}
+
+
+ 
+
+  /*****************/
+ /******MAIN*******/
+/*****************/
+
+#movie .movieP{
+    margin-left: 18%;
+}
+
+#movie main #poster{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+
+#movie main #poster{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+
+#movie main #video{
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    background: url("") no-repeat top center;
+}
+
+
+
+  /*****************/
+ /******INFO*******/
+/*****************/
+
+#movie #more {
+    display: none;
+}
+
+#movie #info-movie ul li{
+    display: inline-block;
+    border: black solid 1px;
+    margin-right: 1%;
+    vertical-align: top;
+}
+
+#movie #info-movie ul li img{
+    width: 140px;
+    height: 210px;
+}
+
+#movie #info-movie ul li p{
+    margin-top: 5px;
+    margin-bottom: 4px;
+    width: 140px;
+    padding-left: 4%;
+}
+
+
+#movie #info-movie ul li #actor{
+    padding-left: 4%;
+}
+
+  /*****************/
+ /***RECOMMEND*****/
+/*****************/
+
+#movie #recommend ul li{
+    display: inline-block;
+    margin-right: 1%;
+    vertical-align: top;    
+}
+#movie #recommend ul li img{
+    width: 140px;
+    height: 210px;
+}

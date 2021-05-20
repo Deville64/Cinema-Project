@@ -1,0 +1,38 @@
+  /*****************/
+ /*****FOOTER******/
+/*****************/
+#footer{
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 0;
+}
+#footer .wrapper{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer nav{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#footer ul li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    width: 15%;
+    margin-left: 10%;
+}
+
+#footer #right{
+    font-size: 16px;
+    vertical-align: top;
+    text-align: center;
+    color: white;
+}
+
+#footer ul li a{
+    color: white;
+}

@@ -1,0 +1,201 @@
+header {
+  background-color: #ed0000;
+  font-size: 0;
+  height: 68px;
+
+  @media (max-width: 1050px) {
+    height: 164px;
+  }
+}
+
+header #menu,
+header #logo,
+header #menu form{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header #logo {
+  width: 105px;
+  @media (max-width: 1050px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header #menu {
+  width: 70%;
+  float: right;
+  font-size: 0;
+  @media (max-width: 1050px) {
+    width: 100%;;
+  }
+}
+
+header #menu form {
+  position: relative;
+  width: 40%;
+  margin-top: 18px;
+
+  @media (max-width: 1526px) {
+    display: inline-block;
+    width: 61%;
+  }
+
+  @media (max-width: 1050px) {
+    width: 100%;;
+    margin-top: 4px;
+  }
+}
+
+header #menu form label {
+  display: none;
+}
+
+header #menu input[type="text"] {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 2.5%;
+  border-radius: 18px 18px 18px 18px;
+  height: 34px;
+}
+
+header #menu select {
+  margin-bottom: 15px;
+  width: 25%;
+  padding: 2.5%;
+  border-radius: 0 18px 18px 0;
+}
+
+header nav input[type="submit"] {
+  display: block;
+  position: absolute;
+  background: url("../image/zoom.png");
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-indent: -9999px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  top: 9px;
+  right: 4%;
+}
+
+header li a:hover,
+header li a:focus {
+  color: #fff;
+}
+
+#sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+//****Dropdown Search*****
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 18px;
+}
+
+header #dropDown .resultMovieSearch img {
+  max-width: 20%;
+}
+
+header #dropDown .resultMovieSearch {
+  cursor: pointer;
+}
+
+header #dropDown .resultMovieSearch:hover {
+  background-color: #f1f1f1;
+}
+
+header .show {
+  display: block;
+}
+
+
+//****Right menu*****
+/*Strip the ul of padding and list styling*/
+header ul {
+  float: right;
+
+  @media (max-width: 1526px) {
+    display: none;
+    background-color: #ed0000;
+  }
+}
+/*Create a horizontal list with spacing*/
+header li {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 18px;
+
+  @media (max-width: 1526px) {
+    width: 100%;
+  }
+
+  &:first-child {
+    background-color: #ffba3f;
+    padding: 10px 20px;
+    border-radius: 18px;
+  }
+
+  &:nth-child(2) {
+    margin-left: 40px;
+
+    @media (max-width: 1526px) {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    margin-left: 40px;
+
+    @media (max-width: 1526px) {
+      margin-left: 0;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+/*Style 'show menu' label button and hide it by default*/
+header .show-menu {
+  background: #19c589;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 18px;
+  display: none;
+  font-size: 18px;
+
+  @media (max-width: 1526px) {
+    display: inline-block;
+    float: right;
+    margin-top: 18px;
+  }
+
+  @media (max-width: 1050px) {
+    float: none;
+    display: block;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*Hide checkbox*/
+header input[type="checkbox"] {
+  display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+header input[type="checkbox"]:checked ~ #jsp {
+  display: block;
+  left: 60%;
+  text-align: center;
+}
