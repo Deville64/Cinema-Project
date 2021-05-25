@@ -56,7 +56,7 @@ function searchMovie() {
                 node.addEventListener("click", function (event) {
                     console.log(event.target.movieID);
                     sessionStorage.setItem("movieID", event.target.movieID); // keep movieID in memory to use it in movie page
-                    location.assign('../cineLol/movie');
+                    location.assign('../cinebuds/movie');
                 });
 
                 var spanTitle = document.createElement("span");
